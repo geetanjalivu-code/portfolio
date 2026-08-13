@@ -241,7 +241,7 @@ export function AboutSection() {
               margin: '0 0 24px',
             }}>
               I drive business growth by&nbsp;
-              <em style={{ fontWeight: 700, color: '#B8722A' }}>
+              <em style={{ fontStyle: 'normal', fontWeight: 700, color: '#B8722A' }}>
                 creating products people love.
               </em>
             </h2>
