@@ -180,7 +180,7 @@ export function WorkJourney() {
           margin: '0 auto 20px', maxWidth: 760,
         }}>
           Nine years of craft.<br />
-          <em style={{ fontWeight: 700, color: '#B8722A' }}>Three chapters</em>{' '}
+          <em style={{ fontStyle: 'normal', fontWeight: 700, color: '#B8722A' }}>Three chapters</em>{' '}
           of career.
         </h2>
         <p style={{ color: '#7a7a9a', fontSize: 16, lineHeight: 1.8, maxWidth: 620, margin: '0 auto' }}>
