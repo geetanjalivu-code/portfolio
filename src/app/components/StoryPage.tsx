@@ -84,7 +84,7 @@ const storyMeta: Record<string, {
   },
   f1: {
     company: "Innspire",
-    timeline: "2021",
+    timeline: "2020",
     role: [
       "Product discovery",
       "UX strategy",
