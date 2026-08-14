@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate, Link } from 'react-router';
 
+
 export function NavBar() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -193,7 +194,7 @@ export function NavBar() {
 
           {/* Resume */}
           <a
-            href="/resume.pdf"
+            href="/Geetanjali_Venkatasubramanian.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-plain-link"
