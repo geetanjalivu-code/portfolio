@@ -2514,6 +2514,7 @@ This image here showcases a user from Japan who is our topmost active user and c
             display: "flex",
             flexDirection: "column",
             gap: 16,
+            marginBottom: 16
           }}
         >
           <P>
@@ -2857,7 +2858,7 @@ With a relatively new ecosystem, not all users are aware that they can order a p
     />
   }
   side="left"
-  gap={16}
+  gap={30}
   imageWidth="30%"
   style={{ marginTop: 24 }}
 >

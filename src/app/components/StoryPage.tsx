@@ -14,6 +14,22 @@ const allStories = [...eras].reverse().flatMap(era =>
 );
 
 
+function useImageLoader(src: string) {
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    setReady(false);
+    const img = new Image();
+    img.onload = () => setReady(true);
+    img.onerror = () => setReady(true);
+    img.src = src;
+    if (img.complete && img.naturalWidth > 0) setReady(true);
+    return () => { img.onload = null; img.onerror = null; };
+  }, [src]);
+
+  return ready;
+}
+
 
 // ─── Shared primitives ────────────────────────────────────────────────────────
 
@@ -84,7 +100,7 @@ const storyMeta: Record<string, {
   },
   f1: {
     company: "Innspire",
-    timeline: "2021",
+    timeline: "2020 - 2021",
     role: [
       "Product discovery",
       "UX strategy",
@@ -111,6 +127,7 @@ function StoryHero({
   era: typeof allStories[0]["era"];
 }) {
   const meta = storyMeta[story.id];
+  const heroReady = useImageLoader(story.image);
 
   return (
     <header style={{ paddingTop: 60 }}>
@@ -298,8 +315,26 @@ function StoryHero({
             overflow: "hidden",
             height: "clamp(240px, 29.8vw, 447px)",
             border: "1.156px solid rgba(26,26,46,0.06)",
+            position: 'relative',
           }}
         >
+          {!heroReady && (
+          <div style={{
+            position: 'absolute',
+            inset: 0,
+            background: 'linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%)',
+            backgroundSize: '200% 100%',
+            animation: 'hero-shimmer 1.4s infinite',
+            zIndex: 1,
+          }}>
+            <style>{`
+              @keyframes hero-shimmer {
+                0%   { background-position: 200% 0; }
+                100% { background-position: -200% 0; }
+              }
+            `}</style>
+          </div>
+        )}
           <ImageWithFallback
             src={story.image}
             alt={story.title}
@@ -596,7 +631,7 @@ export function StoryPage() {
       <NavBar />
 
       {/* Hero always shown */}
-      {id === 'i1' ? <InfineonHero /> : <StoryHero story={story} era={era} />}
+      {id === 'i1' ? <InfineonHero key="i1" /> : <StoryHero key={id} story={story} era={era} />}
 
       {/* Full story content — desktop only */}
       <div className="story-desktop-content">

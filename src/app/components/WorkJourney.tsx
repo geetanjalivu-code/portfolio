@@ -152,6 +152,12 @@ export function WorkJourney() {
           .wj-cards-panel { order: 2 !important; }
           .wj-section { padding: 48px 0 32px !important; }
         }
+        @media (max-width: 700px) {
+          .wj1 { display: none !important; }
+          .wj-hdr { padding: 0 24px !important; margin-bottom: 32px !important; }
+        }
+
+        
       `}</style>
 
       {/* Background texture */}
@@ -168,22 +174,22 @@ export function WorkJourney() {
         marginBottom: 96, textAlign: 'center',
       }}>
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
-          <div style={{ width: 20, height: 1.5, background: '#B8722A', borderRadius: 2 }} />
+          <div  style={{ width: 20, height: 1.5, background: '#B8722A', borderRadius: 2 }} />
           <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '2.2px', textTransform: 'uppercase', color: '#B8722A' }}>
             Work &amp; Journey · 2017 — 2026
           </span>
           <div style={{ width: 20, height: 1.5, background: '#B8722A', borderRadius: 2 }} />
         </div>
-        <h2 style={{
+        <h2 className="wj1" style={{
           fontSize: 'clamp(28px, 4vw, 46px)', fontWeight: 700,
           letterSpacing: '-1.4px', color: '#1a1a2e', lineHeight: 1.1,
           margin: '0 auto 20px', maxWidth: 760,
         }}>
           Nine years of craft.<br />
-          <em style={{ fontStyle: 'italic', fontWeight: 700, color: '#B8722A' }}>Three chapters</em>{' '}
+          <em style={{ fontStyle: 'normal', fontWeight: 700, color: '#B8722A' }}>Three chapters</em>{' '}
           of career.
         </h2>
-        <p style={{ color: '#7a7a9a', fontSize: 16, lineHeight: 1.8, maxWidth: 620, margin: '0 auto' }}>
+        <p className="wj1" style={{ color: '#7a7a9a', fontSize: 16, lineHeight: 1.8, maxWidth: 620, margin: '0 auto' }}>
           From freelance to enterprise — the journey that shaped how I design.
         </p>
       </div>
