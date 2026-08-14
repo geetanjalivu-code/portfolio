@@ -25,7 +25,7 @@ import hobby22 from "../imports/hobby22.jpg";
 import hobby23 from "../imports/hobby23.png";
 import hero from "../imports/about.jpg";
 
-const resumeLink = '/resume.pdf';
+const resumeLink = '/Geetanjali_Venkatasubramanian.pdf';
 const strengthsReportLink = '/cliftonstrengths.pdf';
 
 const strengths = [
