@@ -1,7 +1,5 @@
 
-  # Test project
-
-  This is a code bundle for Test project. The original project is available at https://www.figma.com/design/SxJ74JmKV11RtKXzru9Kv0/Test-project.
+  # Geetanjali V Portfolio
 
   ## Running the code
 

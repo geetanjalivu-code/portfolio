@@ -51,7 +51,7 @@ export const eras = [
     summary:
       "Khoros had multiple products with no shared design language. I was responsible for building and maintaining the component library, design tokens and documentation that became the single source of truth for the entire platform.",
     projectsLabel: "components",
-    projectsCount: 80,
+    projectsCount: 81,
     color: "#3b3bdb",
     darkColor: "#3b3bdb",
     lightBg: "#eef0fd",
@@ -85,7 +85,7 @@ export const eras = [
     summary:
       "Infineon was a hardware powerhouse with no digital design culture. As the only UX team member based in India, I collaborated with a global team for 3 years across 12+ projects to help build that culture.",
     projectsLabel: "projects",
-    projectsCount: 16,
+    projectsCount: 19,
     color: "#0a8276",
     darkColor: "#0C8175",
     lightBg: "#eef9f8",
@@ -99,7 +99,7 @@ export const eras = [
         cardDescription: "How I led 15+ UX projects and shaped connected journeys spanning AI experiences, operational workflows and support platforms.",
         title: "Inside a Digital Transformation",
         client: "Infineon Technologies",
-        description: "The story behind leading and strategizing 12+ redesigns inside an evolving enterprise ecosystem — and watching UX grow from execution into strategy.",
+        description: "The story behind leading and strategizing 15+ redesigns inside an evolving enterprise ecosystem — and watching UX grow from execution into strategy.",
         image: i1Image,
         team: "Global UX team + cross-functional stakeholders",
         projectTypes: "UX Strategy, Ecosystem Design, AI UX",
