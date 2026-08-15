@@ -15,7 +15,7 @@ export const eras = [
     companies: "Unicorn Startups",
     headline: "Designing across industries to simplify complex problems — one client at a time.",
     summary:
-      "Four years. Seven clients. Countless problems worth solving. Working across industries taught me how to think fast, design smart and deliver work that moved the needle - building the foundation that every role since has stood on.",
+      "Four years. Eleven clients. Countless problems worth solving. Working across industries taught me how to think fast, design smart and deliver work that moved the needle - building the foundation that every role since has stood on.",
     projectsLabel: "clients",
     projectsCount: 11,
     color: "#8fa41a",
