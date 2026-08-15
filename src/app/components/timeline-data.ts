@@ -17,7 +17,7 @@ export const eras = [
     summary:
       "Four years. Seven clients. Countless problems worth solving. Working across industries taught me how to think fast, design smart and deliver work that moved the needle - building the foundation that every role since has stood on.",
     projectsLabel: "clients",
-    projectsCount: 7,
+    projectsCount: 11,
     color: "#8fa41a",
     darkColor: "#8fa41a",
     lightBg: "#f0f3da",
