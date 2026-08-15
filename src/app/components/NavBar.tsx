@@ -385,7 +385,7 @@ export function NavBar() {
 
   {/* Resume */}
   <a
-    href="/resume.pdf"
+    href="/Geetanjali_Venkatasubramanian.pdf"
     target="_blank"
     rel="noopener noreferrer"
     className="nav-mobile-item"

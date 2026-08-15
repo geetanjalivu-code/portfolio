@@ -1677,9 +1677,10 @@ export function InfineonHero() {
       <style>{`
         @media (max-width: 800px) {
           .story-hero-title { font-size: 20px !important; }
+        .mobile-hero { padding-right: 16px !important; padding-left: 16px !important; }
         }
       `}</style>
-      <div
+      <div className="mobile-hero"
         style={{
           display: "flex",
           flexDirection: "column",

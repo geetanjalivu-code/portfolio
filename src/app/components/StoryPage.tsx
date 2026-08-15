@@ -131,7 +131,7 @@ function StoryHero({
 
   return (
     <header style={{ paddingTop: 60 }}>
-      <div
+      <div className="mobile-hero"
         style={{
           display: "flex",
           flexDirection: "column",
@@ -625,6 +625,8 @@ export function StoryPage() {
           .story-desktop-content { display: none !important; }
           .story-mobile-banner { display: block !important; }
           .story-hero-title { font-size: 20px !important; }
+        .mobile-hero { padding-right: 16px !important; padding-left: 16px !important; }
+
         }
       `}</style>
 
